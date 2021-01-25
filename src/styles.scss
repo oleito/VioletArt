@@ -1,4 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Gris
+.c-1 {
+    color: #1F1F1F;
+}
+.c-1-bg {
+    background-color: #1F1F1F;
+}
+
+// Violeta
+.c-2 {
+    color: #955FFF;
+}
+.c-2-bg {
+    background-color: #955FFF;
+}
+
+// tres
+.c-3 {
+    color: #955FFF;
+}
+.c-3-bg {
+    background-color: #955FFF;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+/* Importacion de fuentes */
+@font-face {
+    font-family: Bebas;
+    src: url(assets/Fonts/bebas_neue/BebasNeue-Regular.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: League;
+    src: url(assets/Fonts/League-Gothic/LeagueGothic-Regular.otf) format("opentype");
+  }
