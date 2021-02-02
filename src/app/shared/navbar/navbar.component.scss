@@ -1,0 +1,22 @@
+// Nav
+.navbar {
+    z-index: 1500;
+    background-color: rgba($color: #fff, $alpha: 0.05);
+    position: absolute;
+    display: flex;
+    width: 100vw;
+}
+.mt-6 {
+    margin-top: 4.8em !important;
+}
+.nav-link {
+    color: #B2A894 !important; 
+}
+.nav-link:hover {
+    color: #FFDE59 !important;
+}
+.navbar-nav {
+    // font-weight: bold;
+    font-family: League;
+    font-size: 1.4em;
+}
