@@ -3,6 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '*',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -17,23 +22,35 @@ const routes: Routes = [
   },
   {
     path: 'portfolio',
-    loadChildren: () => import('./pages/portfolio/portfolio.module').then(m=>m.PortfolioModule)
+    loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
+  },
+  {
+    path: 'galeria',
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'workshops',
-    loadChildren: () => import('./pages/workshops/workshops.module').then(m=>m.WorkshopsModule)
+    loadChildren: () => import('./pages/workshops/workshops.module').then(m => m.WorkshopsModule)
+  },
+  {
+    path: 'projects',
+    loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule)
+  },
+  {
+    path: 'proyecto',
+    loadChildren: () => import('./pages/proyecto/proyecto.module').then(m => m.ProyectoModule)
   },
   {
     path: 'media',
-    loadChildren: () => import('./pages/media/media.module').then(m=>m.MediaModule)
+    loadChildren: () => import('./pages/media/media.module').then(m => m.MediaModule)
   },
   {
     path: 'shop',
-    loadChildren: () => import('./pages/shop/shop.module').then(m=>m.ShopModule)
+    loadChildren: () => import('./pages/shop/shop.module').then(m => m.ShopModule)
   },
   {
     path: 'contact',
-    loadChildren: () => import('./pages/contact/contact.module').then(m=>m.ContactModule)
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
   }
 
 ];
