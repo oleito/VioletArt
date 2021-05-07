@@ -1,8 +1,17 @@
 // Header
 .custom-brand {
     font-family: Bebas;
+    color: var(--primary-2);
+    font-size: 3em;
 }
 .social-icons {
     height: 1.8em;
     margin-left: 1em;
 }
+.foto-container {
+ border: 1px solid transparent;
+}
+.foto-container:hover {
+    border: 1px solid;
+    border-color: var(--primary-1);
+   }

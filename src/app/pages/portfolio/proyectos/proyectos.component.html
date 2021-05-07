@@ -1,16 +1,15 @@
 <div class="container-fluid px-0">
-    <div class="section text-center no-gutters py-2 mb-2">
-        <h1 class="section-brand"> PORTFOLIO </h1>
+    <div class="section header text-right w-50 no-gutters py-2 mb-2">
+        <h1 class="section-brand pr-4"> Proyectos fotograficos </h1>
     </div>
     <app-navbar></app-navbar>
     <div class="row mt-5 no-gutters">
-
         <div class="container">
             <div class="row justify-content-around pt-2">
-                <div class="col-md-4 text-center" *ngFor="let job of jobs">
-                    <a [routerLink]="['./proyectos']">
+                <div class="col-md-4 text-center" *ngFor="let proyecto of proyectos">
+                    <a [routerLink]="['./proyecto-detalle']">
                         <div class="portfolio-card p-2">
-                            <img [src]="job.img" class="img-fluid">
+                            <img src="https://picsum.photos/id/691/100/100" class="img-fluid">
                         </div>
                         <h2>GALERIA</h2>
                     </a>

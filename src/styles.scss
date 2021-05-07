@@ -1,44 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 
-// Gris
-.c-1 {
-    color: #1F1F1F;
-}
-.c-1-bg {
-    background-color: #1F1F1F;
-}
+// Definicion colores segun manual de marca
+:root {
+  --primary-1: #1f1f1f;
+  --primary-2: #955fff;
+  --primary-3: #e6caff;
 
-// Violeta
-.c-2 {
-    color: #955FFF;
-}
-.c-2-bg {
-    background-color: #955FFF;
-}
+  --secondary-1: #ffde59;
+  --secondary-2: #b2a874;
 
-// tres
-.c-3 {
-    color: #955FFF;
-}
-.c-3-bg {
-    background-color: #955FFF;
+  --background-1: #e8e8e8;
+
+  --error: #ff0000;
+  --valid: #429800;
 }
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 /* Importacion de fuentes */
 @font-face {
-    font-family: Bebas;
-    src: url(assets/Fonts/bebas_neue/BebasNeue-Regular.otf) format("opentype");
-  }
+  font-family: Bebas;
+  src: url(assets/Fonts/bebas_neue/BebasNeue-Regular.otf) format("opentype");
+}
 
-  @font-face {
-    font-family: League;
-    src: url(assets/Fonts/League-Gothic/LeagueGothic-Regular.otf) format("opentype");
-  }
+@font-face {
+  font-family: League;
+  src: url(assets/Fonts/League-Gothic/LeagueGothic-Regular.otf) format("opentype");
+}
 
-  @font-face {
-    font-family: Alegreya;
-    src: url(assets/Fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
-  }
+@font-face {
+  font-family: Alegreya;
+  src: url(assets/Fonts/Alegreya/Alegreya-Bold.ttf) format("truetype");
+}
+
+// Clases generales
+body {
+  background-color: var(--background-1);
+}

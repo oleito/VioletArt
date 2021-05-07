@@ -1,10 +1,7 @@
 // Nav
 .navbar {
     z-index: 1500;
-    background-color: rgba($color: #fff, $alpha: 0.05);
-    position: absolute;
-    display: flex;
-    width: 100vw;
+    background-color: var(--primary-1);
 }
 .mt-6 {
     margin-top: 4.8em !important;

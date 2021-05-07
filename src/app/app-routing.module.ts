@@ -37,10 +37,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule)
   },
   {
-    path: 'proyecto',
-    loadChildren: () => import('./pages/proyecto/proyecto.module').then(m => m.ProyectoModule)
-  },
-  {
     path: 'media',
     loadChildren: () => import('./pages/media/media.module').then(m => m.MediaModule)
   },
